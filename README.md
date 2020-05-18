@@ -2,8 +2,7 @@
 
 ## [Explanatory article](https://www.felixparadis.com)
 ## [Live demo](https://free-ecommerce.netlify.app/)
-
-This is based on the [sapper-template](https://github.com/sveltejs/sapper-template).
+Use Stripe's test card to complete checkout (4242 4242 4242 4242).
 
 # Technologies/services used:
 - FaunaDB (to keep track of inventory)
@@ -11,6 +10,8 @@ This is based on the [sapper-template](https://github.com/sveltejs/sapper-templa
 - Stripe 
 - SendGrid (to send email confirmations to customers)
 - Cloudinary (optional, you could simply use the static folder)
+
+Also, this is based on the [sapper-template](https://github.com/sveltejs/sapper-template).
 
 # How to use this?
 Afther you clone and run this locally, you'll need to create a `.env` file containing the following values:
