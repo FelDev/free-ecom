@@ -33,19 +33,23 @@ exports.handler = async ({body, headers}) => {
     ids = ids.map(obj => obj.id)
     console.log('@ids: ', ids);
     
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    // * MARK ITEMS AS SOLD HERE 🚨
+    // * (Commented out so that the demo always has available items)
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     // Update the DB first...
-    client.query(
-      q.Map(ids,
-        q.Lambda('id', 
-          q.Update(
-            q.Ref(q.Collection('paintings'), q.Var('id')),
-            { data: { sold: true } },
-          )
-        ),
-      )
-    )
-    .then((ret) => console.log("@OUIIII: ", ret))
-    .catch(e => console.log('@e, esti: ', e));
+    // client.query(
+    //   q.Map(ids,
+    //     q.Lambda('id', 
+    //       q.Update(
+    //         q.Ref(q.Collection('paintings'), q.Var('id')),
+    //         { data: { sold: true } },
+    //       )
+    //     ),
+    //   )
+    // )
+    // .then((ret) => console.log("@OUIIII: ", ret))
+    // .catch(e => console.log('@e, esti: ', e));
     
     // Then email the customer...
     const cus = await stripe.customers.retrieve(eventObject.customer);

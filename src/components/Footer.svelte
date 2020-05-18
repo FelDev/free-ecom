@@ -7,5 +7,5 @@
 </style>
 
 <footer>
- © Félix Paradis
+ © <a href="https://www.felixparadis.com">Félix Paradis</a>
 </footer>
