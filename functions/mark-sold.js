@@ -7,9 +7,13 @@ const q = faunadb.query
 exports.handler = async ({body, headers}) => {
   
   try {
-    const client = new faunadb.Client({
-      secret: process.env.FAUNADB_SERVER_SECRET
-    })
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    // * MARK ITEMS AS SOLD HERE 🚨
+    // * (Commented out so that the demo always has available items)
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    // const client = new faunadb.Client({
+      // secret: process.env.FAUNADB_SERVER_SECRET
+    // })
 
     const stripeEvent = stripe.webhooks.constructEvent(
       body,
@@ -27,11 +31,8 @@ exports.handler = async ({body, headers}) => {
     const eventObject = stripeEvent.data.object;
     const items = eventObject.display_items;
     const shippingDetails = eventObject.shipping;
-    console.log('@items: ', items);
-    console.log('@shippingDetails: ', shippingDetails);
     let ids = JSON.parse(eventObject.metadata.ids);
     ids = ids.map(obj => obj.id)
-    console.log('@ids: ', ids);
     
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     // * MARK ITEMS AS SOLD HERE 🚨
@@ -85,7 +86,7 @@ exports.handler = async ({body, headers}) => {
     const msg = {
       to: cus.email,
       from: 'hello@felixparadis.com',
-      subject: "Votre commande Jambonesque",
+      subject: "Your hammy order",
       text: emailString,
       html: emailHTML,
     };
