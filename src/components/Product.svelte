@@ -136,7 +136,7 @@
 				class="sold"
 				in:fly="{{delay: 600, duration: 1500, easing: quadInOut}}"
 			>
-				Déjà vendu!
+				Already sold!
 			</button>
     {:else}
         <input type="hidden" name="id" value="{info.id}" />
@@ -148,7 +148,7 @@
 						in:fly="{{delay: 100, duration: 1500, easing: quadInOut}}"
 						out:fly="{{delay: 0, duration: 200, easing: quadInOut}}"
 					>
-					Retirer du panier
+					Remove from cart
 					</button>
 				{:else}
 					<button
@@ -158,7 +158,7 @@
 						in:fly="{{delay: 100, duration: 1500, easing: quadInOut}}"
 						out:fly="{{delay: 0, duration: 50, easing: quadInOut}}"
 					>
-						Ajouter au panier
+						Add to cart
 					</button>
 				{/if}
     {/if}

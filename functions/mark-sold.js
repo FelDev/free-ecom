@@ -52,31 +52,31 @@ exports.handler = async ({body, headers}) => {
     console.log('@cus: ', cus);
 
     const itemNames = items.reduce((acc,cur) => acc += cur.custom.name + '<br>','');
-    const pluralException1 = items.length > 1 ? "des toiles" : "une toile";
-    const itemsHeader = items.length > 1 ? "Tes toiles" : "Ta toile";
+    const pluralException1 = items.length > 1 ? "paintings" : "painting";
+    const itemsHeader = items.length > 1 ? "Your paintings" : "Your painting";
     const emailHTML = `
-      Tu as vraiment acheté ${pluralException1} de Jambon...<br>
-      Très bonne idée!<br>
+      You really bought a ham ${pluralException1}...<br>
+      Great move!<br>
       <br>
       ${itemsHeader}:<br>
       ${itemNames}
       <br>
-      Ton adresse:<br>
+      Your address:<br>
       ${shippingDetails.address.line1}<br>
       ${shippingDetails.address.city}<br>
       ${shippingDetails.address.postal_code}<br>
       <br>
-      (Avec le Coronavirus pis toute ça pourrait être un boutte avant que je te livre ça.)<br>
+      I'll ship it soon.<br>
       -Félix
       `
       
-    const emailString = 'Tu as vraiment acheté une toile de Jambon...\nTrès bonne idée!\nTa toile:\n'
-      +items[0].custom.name
-      +'\nTon adresse:\n'
+    const emailString = `You really bought a ham ${pluralException1}...\nGreat move!\n`
+      +`${itemsHeader}:\n${items}`
+      +'\nYour address:\n'
       +shippingDetails.address.line1
       +'\n'+shippingDetails.address.city+'\n'
       +shippingDetails.address.postal_code
-      +'\n(Avec le Coronavirus pis toute ça pourrait être un boutte avant que je te livre ça.)\n -Félix';
+      +"\nI'll ship it soon\n -Félix";
 
     const msg = {
       to: cus.email,
