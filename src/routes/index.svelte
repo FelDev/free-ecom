@@ -14,6 +14,11 @@
 		margin: 1em auto;
 	}
 
+	a {
+		padding: 0.2em;
+		margin: 0.2em;
+	}
+
 	#loadingScreen {
 		position: fixed;
     left: 0;
@@ -45,8 +50,6 @@
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
-
-
 
 </style>
 
