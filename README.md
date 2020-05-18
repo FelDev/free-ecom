@@ -31,7 +31,7 @@ You'll need to follow [faunaDB official documentation](https://docs.fauna.com/fa
 Create a new database, a new collection (mine is called "paintings"), documents in the collection and a new index (mine is called "all").
 You'll also need to update the `src/stores.js` file so that the `products` array matches your databases entries. You could remove the `products` array and load everything from the DB, but there is a performance trade-off for that. 
 
-Also, look for the `MARK ITEMS AS SOLD HERE 🚨` comment and uncomment that code.
+Also, look for the `// * MARK ITEMS AS SOLD HERE 🚨` comment and uncomment that code.
 
  ## If you don't need a database
  You can remove `functions/get-products.js` entirely and the `loadProducts()` funcion in `src/routes/index.svelte`. Also, update the `products` array in `src/stores.js` so that the `"sold"` property of products is set to `true` or `false` rather than "loading".
