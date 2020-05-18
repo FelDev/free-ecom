@@ -1,0 +1,74 @@
+[
+  {
+    "sku": "JAM_stu",
+    "name": "Jambon Studieux",
+    "description": "Une source intarissable de motivation pour les étudiants de cycles supérieur. Dans les moments de doute, croisez le regard de ce jambon studieux et retrouvez votre ferveur!",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750857/artsy-hams/Jambon_Success_h6k5vl.jpg",
+    "amount": 1702,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_pec",
+    "name": "Le Jambon Pêcheur",
+    "description": "Cette toile est une preuve que l'artiste maîtrise son médium à la perfection. Un alliage parfait de plusieurs techniques rendent la scène captivante. Parfait pour une salle de bain luxueuse.",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750854/artsy-hams/Jambon_Pecheur_lu9prd.jpg",
+    "amount": 2289,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_pre",
+    "name": "Jambon Prévoyant",
+    "description": "Le ciel se noircit et le parapluie est déjà sorti. Une oeuvre qui nous rapelle l'importance de penser aux générations futures.",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750855/artsy-hams/Jambon_Prevoyant_jz5p3l.jpg",
+    "amount": 1555,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_ska",
+    "name": "Le Jambon Skater",
+    "description": "En hommage",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750851/artsy-hams/Jambon_Skater_x3oiip.jpg",
+    "amount": 2020,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_vol",
+    "name": "Le Jambon Volant",
+    "description": "Ce flamboyant personnage nous rappelle qu'il ne faut pas avoir peur de rêver et qu'il ne faut pas avoir peur de réaliser ses rêves non plus. Sky is the limit!",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750849/artsy-hams/Jambon_Volant_ywe8ij.jpg",
+    "amount": 1742,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_sci",
+    "name": "Le Jambon Scientifique",
+    "description": "Le jambon scientifique semble s'apprêter à voyager dans le temps! Où va-t-il atterir?",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750861/artsy-hams/Jambon_scientifique_ewfcxc.jpg",
+    "amount": 1187,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_mad",
+    "name": "La Belle et le Jambon",
+    "description": "Serait-ce le jambon scientifique qui vient d'atterir? Le regard mystique de la belle fascine les historien de l'art depuis plusieurs années.",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750859/artsy-hams/Jambon_Avec_Madame_vixz7k.jpg",
+    "amount": 966,
+    "currency": "CAD",
+    "sold": false
+  },
+  {
+    "sku": "JAM_chi",
+    "name": "Le Jambon Chic",
+    "description": "Sur un fond sobre, ce jambon est définitivement mignon! On aurait bien envie d'aller partager un martini avec lui.",
+    "image": "https://res.cloudinary.com/felixparadis-com/image/upload/q_auto,f_auto,w_0.2/v1587750838/artsy-hams/Jambon_Chic_t70tjx.jpg",
+    "amount": 1233,
+    "currency": "CAD",
+    "sold": true
+  }
+]

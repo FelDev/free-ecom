@@ -1,0 +1,6 @@
+[build]
+  publish = "__sapper__/export"
+  command = "cd functions && npm i && cd .. && npm run export"
+  functions = "functions"
+
+environment = { NODE_VERSION = "12.16.2", AWS_LAMBDA_JS_RUNTIME = "nodejs12.x" }
