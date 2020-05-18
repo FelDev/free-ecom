@@ -1,6 +1,6 @@
 # A free e-commerce solution based on the Jamstack
 
-## [Explanatory article](https://www.felixparadis.com)
+## [Explanatory article](https://medium.com/better-programming/my-recipe-for-a-0-month-e-commerce-website-b9b31059ba16)
 ## [Live demo](https://free-ecommerce.netlify.app/)
 Use Stripe's test card to complete checkout (4242 4242 4242 4242).
 
