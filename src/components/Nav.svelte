@@ -62,7 +62,7 @@
 	<p
 		class="{shakeIt ? 'shakeIt' : ''}"
 	>
-		🛒{$cart.size}
+		🛒 {$cart.size}
 	</p>
 	
 	<form 
@@ -80,8 +80,6 @@
 
 <script>
 	import { goingToCheckout, cart } from "../stores.js";
-	import { fly } from 'svelte/transition';
-	import { quadInOut } from 'svelte/easing';
 
 	let shakeIt = false;
 
