@@ -60,6 +60,7 @@ exports.handler = async ({body, headers}) => {
     const pluralException1 = items.length > 1 ? "paintings" : "painting";
     const itemsHeader = items.length > 1 ? "Your paintings" : "Your painting";
     const emailHTML = `
+      <strong>*This is not a real receipt. You used a demo integration.*</strong><br>
       You really bought a ham ${pluralException1}...<br>
       Great move!<br>
       <br>
@@ -75,7 +76,7 @@ exports.handler = async ({body, headers}) => {
       -Félix
       `
       
-    const emailString = `You really bought a ham ${pluralException1}...\nGreat move!\n`
+    const emailString = `*This is not a real receipt. You used a demo integration.*\nYou really bought a ham ${pluralException1}...\nGreat move!\n`
       +`${itemsHeader}:\n${items}`
       +'\nYour address:\n'
       +shippingDetails.address.line1
