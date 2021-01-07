@@ -4,3 +4,5 @@
   functions = "functions"
 
 environment = { NODE_VERSION = "12.16.2", AWS_LAMBDA_JS_RUNTIME = "nodejs12.x" }
+[dev]
+  autoLaunch = false

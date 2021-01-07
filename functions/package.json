@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^7.1.0",
-    "faunadb": "^2.14.0",
-    "stripe": "^8.49.0"
+    "@sendgrid/mail": "^7.4.1",
+    "faunadb": "^2.14.2",
+    "stripe": "^8.129.0"
   }
 }

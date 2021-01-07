@@ -67,9 +67,9 @@
 <h1>The Ham Paintings <br> Finally Available </h1>
 
 <p>This is a demo of an e-commerce store built on the Jamstack.</p>
-<a href="https://github.com/FelDev/free-ecom">👉Source code</a>
-<a href="#TODO">👉Explanatory Article</a>
-<a href="https://boutique.felixparadis.com">👉Real implementation</a>
+<a href="https://github.com/FelDev/free-ecom">👉 Source code</a>
+<a href="#TODO">👉 Explanatory Article</a>
+<a href="https://boutique.felixparadis.com">👉 Real implementation</a>
 
 <div class="products">
 	{#each $products as product }
@@ -106,7 +106,7 @@
 		} catch (err) {
 			console.log('@err', err);
 			recursionSafety++
-			if (recusionSafety < 2) {
+			if (recursionSafety < 2) {
 				loadProducts() // Probably won't ever be needed
 			}
 		}
